@@ -7,17 +7,17 @@ function carregar() {
 
     if (hora >= 0 && hora < 12) {
         //bom dia
-        img.src = '../img/manha.png'
+        img.src = 'img/manha.png'
         document.body.style.background = '#dbb99e'
     }
     else if (hora >= 12 && hora <= 18) {
         // boa tarde 
-        img.src = '../img/tarde.png'
+        img.src = 'img/tarde.png'
         document.body.style.background = ' #ba3204'
     }
     else {
         //boa noite
-        img.src = '../img/noite.png'
+        img.src = 'img/noite.png'
         document.body.style.background = ' #6c4e74'
     }
 }
