@@ -35,5 +35,27 @@ function add(){
 }
 
 function fim(){
+    let ttl = valores.length
+    let maior = valores[0]
+    let menor = valores[0]
+    let soma = 0
+    let media = 0
+    
+    for(let pos in valores){
+        soma += valores[pos] 
+            if(maior < valores[pos])
+                maior = valores[pos]
+            if(menor > valores[pos])
+               menor = valores[pos]
+    }
+    media = soma/ttl 
+
+
+
+    res.innerHTML = `<p>o totol de valores é ${ttl}</p>`
+    res.innerHTML += `<p>o maior valor é ${maior}</p>`
+    res.innerHTML += `<p>o menor valor é ${menor}</p>`
+    res.innerHTML += `<p> o soma total é ${soma}</p>`
+    res.innerHTML += `<p> a media total é ${media}</p>`
     
 }
